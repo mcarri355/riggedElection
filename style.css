@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+}
+
+.nixon{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.mcgovern{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: auto;
+}
+
+.flexVote{
+    display: flex;
+    justify-content: center;
+}
+
+.voteLabel{
+    font-size: 48px;
+}
+
+.voteBox{
+    width: 48px;
+    height: 48px;
+    background-color: white;
+}
