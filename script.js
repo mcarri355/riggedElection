@@ -40,8 +40,26 @@ function voteNixon(){
         mcgovern.removeEventListener('contextmenu', rightClick)
         mcgovern.removeEventListener("contextmenu", (e) => {e.preventDefault()});
         mcgovern.removeEventListener('click', leftClick)
+        body.onmousemove = function(event){
+
+            let ballCoords = {
+                top: event.clientY,
+                left: event.clientX,
+            }
+
+            // prevent crossing th
+
+            mcgovern.style.position = 'absolute'
+            mcgovern.style.left = ballCoords.left + 100 + 'px'
+            mcgovern.style.top = ballCoords.top + 100 + 'px'
+            mcgovern.innerHTML = 'Dont Vote For Me'
+        }
+    }
+    if(vote >= 5){
+        location.reload()
     }
 }
+
 function move(){
     if(vote == 0){
     this.style.position = 'absolute'
