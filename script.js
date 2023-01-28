@@ -56,8 +56,8 @@ function error(){
             let errorText = document.createElement("span");
             errorText.innerHTML = "Error";
             errorText.style.position = 'absolute'
-            errorText.style.left = Math.random()*75 + 'vw'
-            errorText.style.top = Math.random()*75 + 'vh'
+            errorText.style.left = Math.random()*95 + 'vw'
+            errorText.style.top = Math.random()*95 + 'vh'
             errorText.style.color = 'white'
             errorText.style.fontSize = 'x-large'
             document.body.appendChild(errorText)
