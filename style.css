@@ -3,9 +3,13 @@ html{
 }
 body{
     background-image: url(flagBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     cursor: url(nixonCursor.png), auto;
     height: 100%;
 }
+
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -39,12 +43,14 @@ body{
 
 button{
     display: flex;
+    cursor: url(nixonCursor.png), auto;
     font-size: xx-large;
     width: 300px;
     justify-content: center;
     width: 25rem;
     height: 5rem;
     border-radius: 20px;
+    z-index: 10;
     align-items: center;
     border: 2px solid white;
 }
