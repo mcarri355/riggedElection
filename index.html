@@ -7,48 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="onload()">
+    <h1>Please Vote For The Best Candidate (Richard Nixon)</h1>
     <div class="container">
         <div class="nixon">
-            <img src="nixon.jpg" alt="" width="400px" height="400px" class="nixonImg">
-            <div class="nixonDesc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error molestiae enim deleniti voluptates, sed
-                veniam
-                impedit ea et natus explicabo beatae, eos modi accusamus quibusdam doloremque illum earum minus officia excepturi
-                dicta
-                maxime ut distinctio iste! Accusantium dolore quisquam laborum maxime, labore expedita, quibusdam ullam blanditiis
-                quia
-                praesentium tempore quam obcaecati autem. Culpa iste exercitationem sint nam! Quis rem ea hic distinctio ipsum
-                exercitationem obcaecati eius repellendus veritatis quam, assumenda provident autem, harum quidem expedita totam
-                mollitia tempore ratione! Sed, quaerat? Magnam quis minima error iure adipisci animi! Non minus sint facere eveniet
-                iste
-                veritatis laboriosam autem reprehenderit iusto porro aut assumenda dolorem nulla iure saepe deserunt fuga itaque,
-                accusamus sed eius? Alias laboriosam vero quod rem vitae cumque, voluptatibus temporibus magnam quaerat sapiente
-                ipsa
-                numquam porro? Fugiat ad minus laboriosam eius earum deleniti architecto laborum, quasi mollitia hic eligendi
-                repellendus ratione inventore corporis aperiam totam eum facilis voluptates.
-                <br>
-                <br>
-                <div class="flexVote"><label for="" class="voteLabel">Vote:</label><button class="voteBox"></button></div>
+            <img src="nixon.jpg" alt="Richard Nixon" class="image" onclick="voteNixon()">
+            <br>
+            <button id="nixonBtn" onclick="voteNixon()">Vote For Nixon</button>
             </div>
-        </div>
-        <br>
         <div class="mcgovern">
-            <img src="mcgovern.webp" alt="" width="400px" height="400px" class="mcgovernImg">
-            <div class="mcgovernDesc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error molestiae enim deleniti voluptates, sed veniam
-                impedit ea et natus explicabo beatae, eos modi accusamus quibusdam doloremque illum earum minus officia excepturi dicta
-                maxime ut distinctio iste! Accusantium dolore quisquam laborum maxime, labore expedita, quibusdam ullam blanditiis quia
-                praesentium tempore quam obcaecati autem. Culpa iste exercitationem sint nam! Quis rem ea hic distinctio ipsum
-                exercitationem obcaecati eius repellendus veritatis quam, assumenda provident autem, harum quidem expedita totam
-                mollitia tempore ratione! Sed, quaerat? Magnam quis minima error iure adipisci animi! Non minus sint facere eveniet iste
-                veritatis laboriosam autem reprehenderit iusto porro aut assumenda dolorem nulla iure saepe deserunt fuga itaque,
-                accusamus sed eius? Alias laboriosam vero quod rem vitae cumque, voluptatibus temporibus magnam quaerat sapiente ipsa
-                numquam porro? Fugiat ad minus laboriosam eius earum deleniti architecto laborum, quasi mollitia hic eligendi
-                repellendus ratione inventore corporis aperiam totam eum facilis voluptates.
-                <br><br>
-                <div class="flexVote"><label for="" class="voteLabel">Vote:</label><button class="voteBox"></button></div>
-            </div>
+            <img src="mcgovern.webp" alt="George McGovern" class="image">
+            <br>
+            <button id="mcgovernBtn">Vote For McGovern</button>
         </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
