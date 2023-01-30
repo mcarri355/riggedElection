@@ -127,6 +127,27 @@ function leftClick(){
         this.style.background = 'blue'
         this.innerHTML = 'Vote For McGovern'
     }
+    if(vote == 4){
+        mcgovern.style.background = 'blue'
+        mcgovern.innerHTML = 'Vote For McGovern'
+        mcgovern.removeEventListener('contextmenu', rightClick)
+        mcgovern.removeEventListener("contextmenu", (e) => {e.preventDefault()});
+        mcgovern.removeEventListener('click', leftClick)
+        body.onmousemove = function(event){
+
+            let ballCoords = {
+                top: event.clientY,
+                left: event.clientX,
+            }
+
+            // prevent crossing th
+
+            mcgovern.style.position = 'absolute'
+            mcgovern.style.left = ballCoords.left + 100 + 'px'
+            mcgovern.style.top = ballCoords.top + 100 + 'px'
+            mcgovern.innerHTML = 'Dont Vote For Me'
+        }
+    }
 }
 
 
