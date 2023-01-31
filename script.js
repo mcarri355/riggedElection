@@ -100,6 +100,15 @@ function revert(){
         this.style.background = 'blue'
         this.innerHTML = 'Vote For McGovern'
     }
+      if(vote == 3){
+        mcgovern.removeEventListener('mouseover', change)
+        mcgovern.removeEventListener('mouseout', revert)
+        mcgovern.removeEventListener('click', fakeout)
+        mcgovern.innerHTML = 'Right Click'
+        mcgovern.addEventListener('contextmenu', rightClick)
+        mcgovern.addEventListener("contextmenu", (e) => {e.preventDefault()});
+        mcgovern.addEventListener('click', leftClick)
+    }
 }
 
 function fakeout(){
